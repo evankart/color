@@ -1,0 +1,73 @@
+body {
+  font-family: "Koulen", cursive;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.title {
+  margin: auto;
+  text-align: center;
+  padding: 1.5rem 0;
+  font-size: 3rem;
+  text-decoration: underline;
+  background: black;
+  color: rgb(255, 255, 255);
+  margin-bottom: 5%;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgb(255, 255, 255);
+  padding: 10px 5%;
+  box-shadow: inset 10px;
+  justify-content: center;
+}
+
+footer {
+  text-align: center;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.gallery img {
+  filter: grayscale(100%);
+  transition: ease 2500ms;
+  width: 100%;
+  max-width: 500px;
+  object-fit: cover;
+  margin: 10px;
+  border-radius: 20px;
+}
+
+img:hover {
+  filter: none;
+  transition: ease 1000ms;
+}
+
+/* Common Media Query Breakpoints: 
+      320px — 480px: Mobile devices
+      481px — 768px: iPads, Tablets
+      769px — 1024px: Small screens, laptops
+      1025px — 1200px: Desktops, large screens
+      1201px and more —  Extra large screens, TV
+  */
+@media only screen and (max-width: 600px) {
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .gallery {
+    padding: 0;
+  }
+
+  .gallery img {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .title {
+    font-size: 1.8rem;
+  }
+}
